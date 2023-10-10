@@ -19,20 +19,32 @@ export const ControlledForm = () => {
     console.log(`${values.firstName} ${values.lastName}`, values);
   };
 
+  console.log("rendering controlled form");
+
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="firstName"
-        value={values.firstName}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        name="lastName"
-        value={values.lastName}
-        onChange={handleChange}
-      />
+    <form
+      onSubmit={handleSubmit}
+      style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+    >
+      <div>
+        <label>Name: </label>
+        <input
+          type="text"
+          name="firstName"
+          value={values.firstName}
+          onChange={handleChange}
+        />
+      </div>
+      <div>
+        <label>Email: </label>
+        <input
+          type="text"
+          name="lastName"
+          value={values.lastName}
+          onChange={handleChange}
+        />
+      </div>
+
       <button>Submit</button>
     </form>
   );
