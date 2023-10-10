@@ -16,7 +16,10 @@ export const UncontrolledForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form
+        onSubmit={handleSubmit}
+        style={{ display: "flex", flexDirection: "column", gap: "20px" }}
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" ref={nameRef} />
