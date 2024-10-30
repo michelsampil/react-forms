@@ -44,3 +44,5 @@ Here are some factors to consider when deciding which approach to use:
 - Predictability: Controlled components offer a more predictable data flow, making it easier to reason about the behavior of your forms.
 
 - Testing: Controlled components are typically easier to test because you can directly control and inspect the component's state.
+
+NOTE: open the console to see the difference.
